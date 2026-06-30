@@ -6,7 +6,7 @@ import {
   Sparkles, Zap, Headphones, Wallet, Users, Settings2, ChevronDown, MapPin, Mail,
   Instagram, Facebook, Star, Quote,
 } from "lucide-react";
-import logoAsset from "@/assets/logo.asset.json";
+import logoAsset from "@/assets/logo.asset.png";
 import heroCamera from "@/assets/hero-camera.jpg";
 import aboutTech from "@/assets/about-technician.jpg";
 import gControl from "@/assets/gallery-control-room.jpg";
