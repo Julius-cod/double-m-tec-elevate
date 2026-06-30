@@ -6,7 +6,7 @@ import {
   Sparkles, Zap, Headphones, Wallet, Users, Settings2, ChevronDown, MapPin, Mail,
   Instagram, Facebook, Star, Quote,
 } from "lucide-react";
-import logoAsset from "@/assets/logo.asset.png";
+import logoAsset from "@/assets/logo.asset.jpg";
 import heroCamera from "@/assets/hero-camera.jpg";
 import aboutTech from "@/assets/about-technician.jpg";
 import gControl from "@/assets/gallery-control-room.jpg";
@@ -78,7 +78,9 @@ function Nav() {
     >
       <div className="container-x flex h-16 md:h-20 items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <img src={logoAsset.url} alt="Double M Tec" width={40} height={40} className="h-10 w-10 rounded-lg object-cover" />
+         <div className="grid h-10 w-10 place-items-center rounded-lg  ring-1 ring-border/60">
+            <img src={logoAsset} alt="Double M Tec" width={40} height={40} className="h-8 w-8 object-contain" />
+          </div>
           <div className="leading-tight">
             <div className="font-display font-bold tracking-tight text-[15px]">DOUBLE M TEC</div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">CCTV Solutions</div>
@@ -92,9 +94,7 @@ function Nav() {
           ))}
         </nav>
         <div className="hidden md:flex items-center gap-3">
-          <a href={TEL_LINK} className="text-sm font-medium text-foreground/80 hover:text-foreground">
-            +244 {WHATSAPP.replace(/(\d{3})(\d{3})(\d{3})/, "$1 $2 $3")}
-          </a>
+
           <a
             href={WA_LINK} target="_blank" rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-elegant hover:opacity-90 transition"
@@ -628,7 +628,9 @@ function Footer() {
       <div className="container-x py-16 grid md:grid-cols-12 gap-10">
         <div className="md:col-span-4">
           <div className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="Double M Tec" width={44} height={44} className="h-11 w-11 rounded-lg" />
+            <div className="grid h-11 w-11 place-items-center rounded-lg bg-background/95 ring-1 ring-border/60">
+              <img src={logoAsset} alt="Double M Tec" width={44} height={44} className="h-9 w-9 object-contain" />
+            </div>
             <div>
               <div className="font-display font-bold tracking-tight">DOUBLE M TEC</div>
               <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">CCTV Solutions</div>
